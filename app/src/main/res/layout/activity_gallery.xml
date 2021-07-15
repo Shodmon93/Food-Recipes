@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#352900"
+    android:padding="5dp"
+    android:id="@+id/gallery">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/foodimage"
+        app:riv_corner_radius="10dp" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/r_image_view"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/texmexchicken"
+        app:riv_border_color="#2D4E27"
+        app:riv_border_width="1dp"
+        app:riv_corner_radius="10dp"
+        app:riv_mutate_background="true"
+        app:riv_tile_mode="clamp" />
+
+    <TextView
+        android:id="@+id/gallery_text"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_alignTop="@id/r_image_view"
+        android:layout_alignBottom="@+id/r_image_view"
+        android:layout_marginBottom="1dp"
+        android:layout_toRightOf="@id/r_image_view"
+        android:background="@drawable/gallery_text_background"
+        android:fontFamily="@font/fondamento"
+        android:padding="4dp"
+        android:text="I took this information from MainActivity"
+        android:textColor="@color/black"
+        android:textSize="10dp" />
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:id="@+id/how_cook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fondamento"
+        android:text="This text was created in a Method in MainActivity"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:layout_below="@id/like"/>
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r_image_view"
+        android:text="im a text from MainActivity"
+        android:fontFamily="@font/fondamento"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:background="@drawable/newfont"/>
+    <ImageButton
+        android:id="@+id/like"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/foodName"
+        android:src="@drawable/ic_baseline_favorite_border_24"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        />
+
+
+
+
+</RelativeLayout>
